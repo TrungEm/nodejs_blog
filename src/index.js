@@ -4,6 +4,10 @@ const handlebars = require('express-handlebars').engine;
 const path = require('path');
 
 const route = require('./routes');
+const db = require('./config/db');
+
+// Connect to DB
+db.connect();
 
 const app = express();
 const port = 3000;
