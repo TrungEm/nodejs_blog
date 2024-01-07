@@ -1,5 +1,5 @@
 const Courses = require('../models/Course');
-const { multipleMongooseToObject, mongooseToObject } = require('../../utils/mongoose');
+const { multipleMongooseToObject } = require('../../utils/mongoose');
 
 class SiteController {
     home(req, res, next) {
